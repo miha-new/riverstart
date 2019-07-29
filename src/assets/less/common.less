@@ -1,0 +1,59 @@
+@import "reboot";
+#app {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.page {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+  }
+  &-content {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    @media (min-width: 1200px) {
+      flex: 0 0 calc(100% - 312px);
+      max-width: calc(100% - 312px);
+      order: 1;
+    }
+  }
+  &-sidebar {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    @media (min-width: 1200px) {
+      flex: 0 0 312px;
+      max-width: 312px;
+      order: 2;
+    }
+  }
+}
+
+.content {
+  &-title {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+}
+
+.text-muted {
+  color: rgba(#2e2e2e,.4);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
